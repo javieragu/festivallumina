@@ -5,38 +5,42 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Festival Lúmina</title>
 	<link rel="preconnect" href="https://fonts.gstatic.com"> 
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="./CSS/mystyle.css">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./CSS/mystyle2.css">
 </head>
 <body> 
-	<header class="item-1">
-		<nav id="main-menu">
+	<header class="header">
+		<nav id="menu">
 			<img id="trueno" src="./Imagenes/trueno.svg">
 			<ul>
 			   <li class="menu-click"><a href="#line-up"> Line Up </a></li>
 			   <li class="menu-click"><a href="#precio"> Precios y Ubicaciones </a></li>
 			   <li class="menu-click"><a href="#fondo-noticia"> Noticias </a></li>
 			   <li class="menu-click"><a href="#fondo-comollegar"> Cómo llegar </a></li>
-			   <li id="compra-entradas" class="menu-click"><a href="#"><img id= "ticket" src="./Imagenes/Ticket.svg"> Compra entradas </a></li>
+			   <li class="menu-click" id="compra-entradas" >
+				   <a href="#">
+					   <img id= "ticket" src="./Imagenes/Ticket.svg"> 
+						Compra entradas 
+					</a>
+				</li>
 			</ul>
 		</nav>
 	</header>
-	<main>
-		<section id=item-2>
+	<main class="content">
+		<section class="items" id=item-1>
 			<img id="banner" src="./Imagenes/Banner.jpg">
 		</section>
-		<section id="item-3">
-		<div class="text-box">
-			<h1 id="line-up">Line Up</h1>
-			<p id="artistas">
-				<span style="font-weight:bold">Perota Chingó </span> - Diego Peralta - Vicente Cifuentes <span style="font-weight:bold">Marineros</span>  - Movimiento por la liberación del ruido - Mariel Mariel - <span style="font-weight: bold" >Yorka York</span>  - Niños Índigo - Donato Soto - Nando Garcia - MalditoLeo - <span style="font-weight: bold" >Dadalú</span> 
-			</p>
-		</div>
+		<section class="items" id="item-2">
+			<div class="text-box">
+				<h1 id="line-up">Line Up</h1>
+				<p id="artistas">
+					<span style="font-weight:bold">Perota Chingó </span> - Diego Peralta - Vicente Cifuentes <span style="font-weight:bold">Marineros</span>  - Movimiento por la liberación del ruido - Mariel Mariel - <span style="font-weight: bold" >Yorka York</span>  - Niños Índigo - Donato Soto - Nando Garcia - MalditoLeo - <span style="font-weight: bold" >Dadalú</span> 
+				</p>
+			</div>
 		</section>
-		<section id="precio-ubicaciones">
-			<div>
-				<img id="precio" src="./Imagenes/Precio-ubicaciones.jpg">
+		<section class="items" id="item-3">
+			<div class="content-precio">
 				<h2 class="sub-titulo">Precios y Ubicaciones</h2>
 				<div id="drop">
 					<span> Early Bird </span>
@@ -73,9 +77,8 @@
 				 </div>
 			</div>
 		</section>
-		<section id="noticias">
-			<div>
-				<img id="fondo-noticia" src="./Imagenes/Noticias.jpg">
+		<section class="items" id="item-4">
+			<div class="content-noticias">
 				<article id="info-artistas">
 					 <h2 class="sub-titulo">Noticias</h2>
 				 <article id="mariel">
@@ -106,38 +109,29 @@
 				</article>
 			</div>
 		</section>
-		<section id="como-llegar" >
-			<div>
-				<figure>
-					<img id="fondo-comollegar" src="./Imagenes/Como-llegar.jpg">
-				</figure>
-				<figure>
-					<img id="mapa" src="./Imagenes/Mapa-layout.jpg">
-				</figure>
-				<h2 class="sub-titulo">Cómo llegar</h2>
-			</div>
+		<section class="items" id="item-5" >
+				<div id="content-comollegar"> 
+					<figure>
+						<img id="mapa" src="./Imagenes/Mapa-layout.jpg">
+					</figure>
+					<h2 class="sub-titulo">Cómo llegar</h2>
+				</div>
 		</section>
-		<section id="media">
-			<div> 
-				<h2 class="sub-titulo"> Media Partners </h2>
-				<img id="media-uno" class="media-partners" src="./Imagenes/chile-surf.svg">
-				<img id="media-dos" class="media-partners" src="./Imagenes/surflodge.svg">
-				<img id="media-tres" class="media-partners" src="./Imagenes/la-virgen.svg">
-				<img id="media-cuatro" class="media-partners" src="./Imagenes/viejo-lobo.svg">
+		<section class="items" id="item-6">
+			<div id=contenedor-media>
+					<h2 class="sub-titulo"> Media Partners </h2>
+					<img src="./Imagenes/social-media.svg">
 			</div>
 		</section>
 	</main>
-	<footer id="footer">
-		<div> 
-			<img id="footer-fondo" src="./Imagenes/Footer.jpg">	
-			<div id="zona-info">
+	<footer class="items" id="item-7">
+		<div id="contenedor-7" >
 			<ul class="info-contacto">
 				<li><a href="#">Nosotros</a></li>
 				<li><a href="#">Contacto</a></li>
 				<li><a href="#">Pregunta frecuente</a></li>
 				<li><a href="#">Idiomas</a></li>
 			</ul>
-			</div>
 		</div>
 		<div id="idiomas">
 			<ul class="idioma-seleccion">
