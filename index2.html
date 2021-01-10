@@ -8,6 +8,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="./CSS/mystyle2.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body> 
 	<header class="header">
@@ -124,32 +125,51 @@
 			</div>
 		</section>
 	</main>
-	<footer class="items" id="item-7">
-		<div id="contenedor-7" >
-			<ul class="info-contacto">
-				<li><a href="#">Nosotros</a></li>
-				<li><a href="#">Contacto</a></li>
-				<li><a href="#">Pregunta frecuente</a></li>
-				<li><a href="#">Idiomas</a></li>
-			</ul>
-		</div>
-		<div id="idiomas">
-			<ul class="idioma-seleccion">
-				<li id="es"><a href="#">ES</a></li>
-				<li id="en"><a href="#">EN</a></li>
-				<li id="de"><a href="#">DE</a></li>
-			</ul>
-		</div>
-		<div>
-			<p id="reserved"> LuminaFest 2020. All rights reserved. </p>
-		</div>
-		<div id="correo">
-			<label id="suscribete" ><span style="font-weight: bold">Suscríbete</span> a nuestro newsletter </label>
-			<input id="email" type="email" name="email" size="30">
-			<input id="boton" type="submit" value="Enviar">
-		</div>
-		<div id="redes-sociales">
-			<i class="iconos"></i>
+	<footer>
+		<div class="espacio-top">
+			<div class="flex-box">
+				<ul class="info-contacto columna-4">
+					<li><a href="#">Nosotros</a></li>
+					<li><a href="#">Contacto</a></li>
+					<li><a href="#">Pregunta frecuente</a></li>
+					<li class="idiomas-footer"><a href="#">Idiomas</a>
+						<ul><li><a href="#">ES</a></li>
+							<li><a href="#">EN</a></li>
+							<li><a href="#">DE</a></li></ul>
+					</li>
+				</ul>
+			
+				<div class="columna-4" id="suscribete">
+					<label><span style="font-weight: bold">Suscríbete</span> a nuestro newsletter </label>
+					<form action="">
+					<input id="email" type="email" name="email" size="30">
+					<input id="boton" type="submit" value="Enviar">
+				</form>
+				<p id="reserved"> LuminaFest 2020. All rights reserved. </p>
+				</div>
+
+				<div class="columna-4">
+					<ul id="redes">
+						<li>
+							<a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+						</li>
+		
+						<li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						</li>
+		
+						<li><a href=""><i class="fa fa-spotify" aria-hidden="true"></i></a>
+						</li>
+		
+						<li><a href=""><i class="fa fa-youtube" aria-hidden="true"></i></a>
+						</li>
+		
+						<li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="columna-4"></div>
+			</div>
 		</div>
 	</footer>
 </body>
