@@ -5,39 +5,43 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Festival Lúmina</title>
 	<link rel="preconnect" href="https://fonts.gstatic.com"> 
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="./CSS/mystyle.css">
-	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body> 
-	<header class="item-1">
-		<nav id="main-menu">
+	<header class="header">
+		<nav id="menu">
 			<img id="trueno" src="./Imagenes/trueno.svg">
 			<ul>
 			   <li class="menu-click"><a href="#line-up"> Line Up </a></li>
 			   <li class="menu-click"><a href="#precio"> Precios y Ubicaciones </a></li>
 			   <li class="menu-click"><a href="#fondo-noticia"> Noticias </a></li>
 			   <li class="menu-click"><a href="#fondo-comollegar"> Cómo llegar </a></li>
-			   <li id="compra-entradas" class="menu-click"><a href="#"><img id= "ticket" src="./Imagenes/Ticket.svg"> Compra entradas </a></li>
+			   <li class="menu-click" id="compra-entradas" >
+				   <a href="#">
+					   <img id= "ticket" src="./Imagenes/Ticket.svg"> 
+						Compra entradas 
+					</a>
+				</li>
 			</ul>
 		</nav>
 	</header>
-	<main>
-		<section id=item-2>
+	<main class="content">
+		<section class="items" id=item-1>
 			<img id="banner" src="./Imagenes/Banner.jpg">
 		</section>
-		<section id="item-3">
-		<div class="text-box">
-			<h1 id="line-up">Line Up</h1>
-			<p id="artistas">
-				<span style="font-weight:bold">Perota Chingó </span> - Diego Peralta - Vicente Cifuentes <span style="font-weight:bold">Marineros</span>  - Movimiento por la liberación del ruido - Mariel Mariel - <span style="font-weight: bold" >Yorka York</span>  - Niños Índigo - Donato Soto - Nando Garcia - MalditoLeo - <span style="font-weight: bold" >Dadalú</span> 
-			</p>
-		</div>
+		<section class="items" id="item-2">
+			<div class="text-box">
+				<h1 id="line-up">Line Up</h1>
+				<p id="artistas">
+					<span style="font-weight:bold">Perota Chingó </span> - Diego Peralta - Vicente Cifuentes <span style="font-weight:bold">Marineros</span>  - Movimiento por la liberación del ruido - Mariel Mariel - <span style="font-weight: bold" >Yorka York</span>  - Niños Índigo - Donato Soto - Nando Garcia - MalditoLeo - <span style="font-weight: bold" >Dadalú</span> 
+				</p>
+			</div>
 		</section>
-		<section id="precio-ubicaciones">
-			<div>
-				<img id="precio" src="./Imagenes/Precio-ubicaciones.jpg">
+		<section class="items" id="item-3">
+			<div class="content-precio">
 				<h2 class="sub-titulo">Precios y Ubicaciones</h2>
 				<div id="drop">
 					<span> Early Bird </span>
@@ -74,105 +78,125 @@
 				 </div>
 			</div>
 		</section>
-		<section id="noticias">
-			<div>
-				<img id="fondo-noticia" src="./Imagenes/Noticias.jpg">
-				<article id="info-artistas">
-					 <h2 class="sub-titulo">Noticias</h2>
-				 <article id="mariel">
-					 <img src="./Imagenes/mariel-mariel.jpg">
-					 <p>Mariel Mariel lanza su nuevo
-						single "Somos de piel"</p>
-				 </article>
-				 <article id=perota-chingo>
-					 <img src="./Imagenes/Perota-Chingo.jpg">
-					 <p>Perotá Chingó: el estreno de su última producción, perspectivas de género en la industria musical y su opinión sobre el proceso social chileno</p>
-				 </article>
-				 <article id="duo-marine">
-					 <img src="./Imagenes/marineros.jpg">
-					 <p>Este disco nos permitió descubrir qué es lo queremos hacer en esta vida: Duo Marineros celebra aniversario de su disco debut con venta especial</p>
-				 </article>
-				 <article id="yorka">
-					 <img src="./Imagenes/Yorka.jpg">
-					 <p>Yorka: “La escena musical de los últimos años tiene nombre de mujer”</p>
-				 </article>
-				 <article id="dperalta">
-					 <img src="./Imagenes/dperalta.jpg">
-					 <p>Música del Sur celebra su primera década con festival: “Canciones que sueñan bien”<br></br><br>¿Invitados? Diego Peralta, entre otros”</br></p>
-				 </article>
-				 <article id="nando">
-					 <img src="./Imagenes/nando-garcia.jpg">
-					 <p>Nando García estrena «Tripa o cable», un EP que nace y termina en periodo de cuarentena</p>
-				 </article>
+		<section class="items" id="item-4">
+			<div class="content-noticias">
+				<h2 class="sub-titulo">Noticias</h2>
+				<article id="info-artistas" class="flex-box">
+					
+					<div class="columna-2 padding-artistas">
+						<article id="destacado" class="imagen-destacada grayscale">
+							<img src="./Imagenes/mariel-mariel.jpg">
+							<p>Mariel Mariel lanza su nuevo single "Somos de piel"</p>
+						</article>
+					
+						<article class="articulo-artistas flex-box flex-align">
+							<figcaption class="columna-2">
+								<img src="./Imagenes/Yorka.jpg">
+							</figcaption>
+
+							<div class="columna-2">
+								<p>Yorka: “La escena musical de los últimos años tiene nombre de mujer”</p>
+							</div>
+						</article>
+
+						<article class="articulo-artistas flex-box flex-align">
+							<div class="columna-2">
+								<p>Música del Sur celebra su primera década con festival: “Canciones que sueñan bien”<br></br><br>¿Invitados? Diego Peralta, entre otros”</br></p>
+							</div>
+							<figcaption class="columna-2">
+								<img src="./Imagenes/dperalta.jpg">
+							</figcaption>
+						</article>
+					</div>
+
+					<div class="columna-2 padding-artistas">
+						
+						<article class="articulo-artistas flex-box flex-align">
+							<figcaption class="columna-2">
+								<img src="./Imagenes/Perota-Chingo.jpg">
+							</figcaption>
+
+							<div class="columna-2"><p>Perotá Chingó: el estreno de su última producción, perspectivas de género en la industria musical y su opinión sobre el proceso social chileno</p></div>
+						</article>
+
+						<article class="articulo-artistas flex-box flex-align">							
+							<div class="columna-2">
+								<p>Este disco nos permitió descubrir qué es lo queremos hacer en esta vida: Duo Marineros celebra aniversario de su disco debut con venta especial</p>
+							</div>
+
+							<figcaption class="columna-2">
+								<img src="./Imagenes/marineros.jpg">
+							</figcaption>
+						</article>
+					
+						<article id="destacado" class="imagen-destacada zoom">
+							<img src="./Imagenes/nando-garcia.jpg">
+							<p>Nando García estrena «Tripa o cable», un EP que nace y termina en periodo de cuarentena</p>
+						</article>
+					</div>
 				</article>
 			</div>
 		</section>
-		<section id="como-llegar" >
-			<div>
-				<figure>
-					<img id="fondo-comollegar" src="./Imagenes/Como-llegar.jpg">
-				</figure>
-				<figure>
-					<img id="mapa" src="./Imagenes/Mapa-layout.jpg">
-				</figure>
-				<h2 class="sub-titulo">Cómo llegar</h2>
-			</div>
+		<section class="items" id="item-5" >
+				<div id="content-comollegar"> 
+					<figure>
+						<img id="mapa" src="./Imagenes/Mapa-layout.jpg">
+					</figure>
+					<h2 class="sub-titulo">Cómo llegar</h2>
+				</div>
 		</section>
-		<section id="media">
-			<div> 
-				<h2 class="sub-titulo"> Media Partners </h2>
-				<img id="media-uno" class="media-partners" src="./Imagenes/chile-surf.svg">
-				<img id="media-dos" class="media-partners" src="./Imagenes/surflodge.svg">
-				<img id="media-tres" class="media-partners" src="./Imagenes/la-virgen.svg">
-				<img id="media-cuatro" class="media-partners" src="./Imagenes/viejo-lobo.svg">
+		<section class="items" id="item-6">
+			<div id=contenedor-media>
+					<h2 class="sub-titulo"> Media Partners </h2>
+					<img src="./Imagenes/social-media.svg">
 			</div>
 		</section>
 	</main>
-	<footer id="footer">
-		<div> 
-			<img id="footer-fondo" src="./Imagenes/Footer.jpg">	
-			<div id="zona-info">
-			<ul class="info-contacto">
-				<li><a href="#">Nosotros</a></li>
-				<li><a href="#">Contacto</a></li>
-				<li><a href="#">Pregunta frecuente</a></li>
-				<li><a href="#">Idiomas</a></li>
-			</ul>
+	<footer>
+		<div class="espacio-top">
+			<div class="flex-box">
+				<ul class="info-contacto columna-4">
+					<li><a href="#">Nosotros</a></li>
+					<li><a href="#">Contacto</a></li>
+					<li><a href="#">Pregunta frecuente</a></li>
+					<li class="idiomas-footer"><a href="#">Idiomas</a>
+						<ul><li><a href="#">ES</a></li>
+							<li><a href="#">EN</a></li>
+							<li><a href="#">DE</a></li></ul>
+					</li>
+				</ul>
+			
+				<div class="columna-4" id="suscribete">
+					<label><span style="font-weight: bold">Suscríbete</span> a nuestro newsletter </label>
+					<form action="">
+					<input id="email" type="email" name="email" size="30">
+					<input id="boton" type="submit" value="Enviar">
+				</form>
+				<p id="reserved"> LuminaFest 2020. All rights reserved. </p>
+				</div>
+
+				<div class="columna-4">
+					<ul id="redes">
+						<li>
+							<a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+						</li>
+		
+						<li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						</li>
+		
+						<li><a href=""><i class="fa fa-spotify" aria-hidden="true"></i></a>
+						</li>
+		
+						<li><a href=""><i class="fa fa-youtube" aria-hidden="true"></i></a>
+						</li>
+		
+						<li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="columna-4"></div>
 			</div>
-		</div>
-		<div id="idiomas">
-			<ul class="idioma-seleccion">
-				<li id="es"><a href="#">ES</a></li>
-				<li id="en"><a href="#">EN</a></li>
-				<li id="de"><a href="#">DE</a></li>
-			</ul>
-		</div>
-		<div>
-			<p id="reserved"> LuminaFest 2020. All rights reserved. </p>
-		</div>
-		<div id="correo">
-			<label id="suscribete" ><span style="font-weight: bold">Suscríbete</span> a nuestro newsletter </label>
-			<input id="email" type="email" name="email" size="30">
-			<input id="boton" type="submit" value="Enviar">
-		</div>
-		<div id="redes-sociales">
-			<ul>
-				<li>
-					<a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
-				</li>
-
-				<li><a href=""<i class="fa fa-facebook" aria-hidden="true"></i></a>
-				</li>
-
-				<li><a href=""><i class="fa fa-spotify" aria-hidden="true"></i></a>
-				</li>
-
-				<li><a href=""><i class="fa fa-youtube" aria-hidden="true"></i></a>
-				</li>
-
-				<li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
-				</li>
-			</ul>
 		</div>
 	</footer>
 </body>
