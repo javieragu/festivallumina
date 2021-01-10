@@ -4,6 +4,9 @@
 	box-sizing: border-box;
 }
 
+html {
+    font-size: 12px;
+}
 body{
     position: relative;
 }
@@ -113,9 +116,9 @@ body{
 	font-size: 43px;
 	position: absolute;
     height: auto;
-    left: 211px;
+    right: 115px;
     top: 161px;
-    width: auto;
+    width: 75%;
     text-align: left;
     line-height: 173.4%;
 }
@@ -366,11 +369,11 @@ body{
     margin-bottom: -297px;
 }
 .content-noticias{
-    background-image: url('../Imagenes/Noticias.jpg');
-    background-repeat: no-repeat;
-    background-position: 0px 0px;
-    background-size: 100%;
-    height: 1402px;
+    background-color: #ffda7f;
+}
+
+#info-artistas{
+    padding: 100px;
 }
 #item-4 h2{
     padding: 22px 100px;
@@ -380,122 +383,64 @@ body{
     left: 519px;
     top: 70px;
     border: 8px solid #FFFFFF;
-    box-sizing: border-box;	
+    box-sizing: border-box;
+    margin-bottom: 40px;
 }
 #info-artistas p{
 	font-family:'Raleway', sans-serif;
 	font-style: normal;
     font-weight: bold;
 }
-#mariel img{
-	position: absolute;
-    width: 602px;
-    height: 518px;
-    left: 60px;
-    top: 205px;
+.imagen-destacada {
+    position: relative;
 }
-#mariel img:hover {
+
+.imagen-destacada img {
+    width: 100%;
+}
+
+.grayscale {
+    margin-bottom: 100px;
+}
+
+.grayscale img:hover {
     filter: grayscale(1);
 }
-#mariel p{
+#destacado p {
 	position: absolute;
     width: 540px;
     height: 120px;
-    left: 125px;
-    top: 590px;
+    left: 30px;
+    bottom: 30px;
     color: #FFFFFF;
-    font-size: 36px;
+    font-size: 2em;
     line-height: 42px;
 }
-#perota-chingo img{
-	position: absolute;
-    width: 303px;
-    height: 260px;
-    right: 360px;
-    top: 205px;
+
+.articulo-artistas img {
+    width: 100%;
 }
-#perota-chingo p{
-	position: absolute;
-    width: 243px;
-    height: 149px;
-    right: 70px;
-    top: 270px;
+
+.articulo-artistas p{
+    padding: 45px;
     color: #000000;
     font-size: 18px;
     line-height: 21px;
 }
-#duo-marine img{
-	position: absolute;
-    width: 302px;
-    height: 260px;
-    right: 60px;
-    top: 465px;
+.zoom {
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    margin-top: 100px;
 }
-#duo-marine p{
-	position: absolute;
-    width: 243px;
-    height: 149px;
-    right: 390px;
-    top: 540px;
-    color: #000000;
-    font-size: 18px;
-    line-height: 21px;
+
+.zoom img:hover{
+    transform: scale(1.08);
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
 }
-#yorka img{
-	position: absolute;
-    width: 302px;
-    height: 260px;
-    left: 87px;
-    top: 790px;
-}
-#yorka p{
-	position: absolute;
-    width: 243px;
-    height: 149px;
-    left: 432px;
-    top: 880px;
-    color: #000000;
-    font-size: 18px;
-    line-height: 21px;
-}
-#dperalta img{
-	position: absolute;
-    width: 302px;
-    height: 260px;
-    left: 387px;
-    top: 1050px;
-}
-#dperalta p{
-	position: absolute;
-    width: 243px;
-    height: 149px;
-    left: 116px;
-    top: 1100px;
-    font-size: 18px;
-    line-height: 21px;
-    color: #000000;
-}
-#nando img{
-	position: absolute;
-    width: 601px;
-    height: 518px;
-    right: 60px;
-    top: 790px;
-    transition: width 2s, height 2s, transform 2s;
-}
-#nando img:hover{
-	transform: scale(1.08);
-}
-#nando p{
-	position: absolute;
-    width: 540px;
-    height: 201px;
-    right: 70px;
-    top: 1098px;
-    font-size: 36px;
-    line-height: 42px;
-    color: #FFFFFF;
-}
+
 #content-comollegar{
     background-image: url('../Imagenes/Como-llegar.jpg');
     background-repeat: no-repeat;
@@ -552,6 +497,13 @@ footer{
     flex-wrap: wrap;
     flex-direction: row;
 }
+
+.flex-align { 
+    align-items: center;
+    justify-content: center;
+}
+
+
 #suscribete{
 	display: block;
 	font-family: 'Open Sans', sans-serif;
@@ -605,7 +557,7 @@ footer{
 }
 
 .info-contacto li {
-    padding: 10px 0;
+    padding: 8px 0;
 }
 
 .info-contacto a {
@@ -649,9 +601,17 @@ footer{
     float: left;
 }
 
+.columna-2{
+    flex: 2;
+}
+
 .columna-4 {
     flex: 4;
-    padding: 50px 15px;
+    padding: 15px 0;
+}
+
+.padding-artistas{
+    padding: 0 30px;
 }
 
 .espacio-top{
@@ -666,7 +626,7 @@ footer{
 #redes li {
     float: left;
     font-size: 30px;
-    padding: 20px 15px;
+    padding: 20px 10px;
 }
 
 #redes li a {
