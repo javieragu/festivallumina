@@ -621,6 +621,7 @@ footer{
 #redes {
     list-style: none;
     float: right;
+    padding: 38px 0px;
 }
 
 #redes li {
